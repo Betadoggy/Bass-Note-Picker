@@ -40,8 +40,14 @@
       margin-bottom: 0;
     }
 
-    .generateButton{
-      font-size: 18px;
+    .btn{
+      background: #275efe;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 500;
+      border-radius: 24px;
+      display: block;
+      padding: 1rem 2rem;
     }
   </style>
 </head>
@@ -60,13 +66,18 @@
       <div class="container">
         <p align="center" class="notes">A</p>
         <div class="containter">
-          <button id="generateButton">Generate</button>
+          <button class="btn" id="generateBtn">Generate</button>
         </div>
       </div>
     </section>
     <footer id="footer" class="footer">
     </footer>
   </div>
+  <script>
+    function myFunc(){
+      var noteArr = [A, B, C, D, E, F, G];
+      console.log([Math.floor(Math.random()*noteArr.length)]);
+    }
+  </script>
 </body>
-
 </html>
